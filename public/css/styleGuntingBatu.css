@@ -1,0 +1,162 @@
+* {
+  background: url('../assets/background/back.jpg') fixed;
+  background-size: cover;
+  max-width: 100%;
+  min-height: max-content;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  background-attachment: fixed;
+}
+
+img.animated-gif{
+  width: 60px;
+  height: auto;
+
+}
+img.anime-gif{
+  width: 400px;
+  height: auto;
+  margin-top: -200px;
+  position: relative;
+  margin-left: 1100px;
+
+}
+
+#player h1 {
+  box-shadow: 1px 1px 2px 2px rgb(241, 178, 6);
+  cursor: pointer;
+  border: 5px solid #f0a210;
+	border-radius: 20px;
+  background-color: tomato;
+  height: 45px;
+	width: 180px;
+  margin-left: 150px;
+  
+  
+}
+
+#computer h1 {
+  box-shadow: 1px 1px 2px 2px rgb(241, 178, 6);
+  cursor: pointer;
+  border: 5px solid #f0a210;
+	border-radius: 20px;
+  height: 45px;
+	width: 210px;
+  margin-left: 150px;
+  
+  
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+#header a {
+  text-decoration: none;
+  color: #020202;
+  font-size: 1.5rem;
+  margin: 15px 10px ;
+  
+
+ 
+}
+#header .logo {
+  margin: 25px;
+  margin-left: 50px;
+}
+#header  h1 {
+  color: rgb(250, 247, 48);
+  font-weight: 200px;
+  margin-left: -5px;
+  margin-top: 20px;
+
+}
+
+#content {
+  width: 50%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'player . computer'
+    'player vs computer'
+    'player . computer'
+    '. refresh .';
+}
+#content img {
+  padding: 5px;
+  max-width: 90px;
+}
+
+#player {
+  grid-area: player;
+  text-align: center;
+  align-self: center;
+}
+
+#vs {
+  grid-area: vs;
+  text-align: center;
+  align-self: center;
+  color: #bd0000;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+
+
+#computer {
+  grid-area: computer ;
+  text-align: center;
+  align-self: center;
+}
+
+#refresh {
+  grid-area: refresh;
+  text-align: center;
+  cursor: pointer;
+  margin-top: -250px;
+  position: flex;
+}
+
+.batu,
+.gunting,
+.kertas {
+  transition: 0.5s;
+  position: relative;
+  cursor: pointer;
+  height: 110px;
+  
+ 
+}
+
+.batu:hover,
+.kertas:hover,
+.gunting:hover,
+.active {
+  /* box-shadow: 0px 0px 3px 3px rgb(75, 85, 92); */
+  transform: scale(0.9);
+  
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 100px;
+  color: rgb(30, 89, 199);
+  font-size: 40px;
+  margin: 5% auto;
+  border-radius: 20px;
+  transform: rotate(-10deg);
+  border-color: #f9b23d;
+  box-shadow: 5px 5px 5px 5px rgb(74, 85, 94);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+

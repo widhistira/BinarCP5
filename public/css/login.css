@@ -1,0 +1,113 @@
+body {
+    background: url(../assets/background/back2.gif)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+
+}
+
+.login {
+    background: url(../assets/background/back.gif) no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 100px;
+    width: 500px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+}
+
+.avatar {
+    font-size: 50px;
+    background:#bdc3c7;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: fixed;
+    left: 47%;
+    top: 5%;
+    transform: translate(-50% -50%);
+    border-radius: 50%;
+    color: #2c3e50;
+}
+
+.login h2 {
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    letter-spacing: 5px;
+
+}
+
+.box-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-bottom: 5px solid white;
+    padding: 8px 0;
+  
+}
+
+.box-login i {
+    font-size: 25px;
+    color:whitesmoke
+}
+
+.box-login input {
+    width: 80%;
+    padding: 0 15px;
+    background: rgba(226, 221, 221, 0.5);
+    border: groove;
+    outline: none;
+    color: black;
+    font-size: 22px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.box-login input::placeholder {
+    color: black;
+}
+
+button {
+    width: 5rem;
+    /* padding: 0px; */
+    border: 5px solid rgba(156, 79, 6, 0.973);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.8s;
+    margin: auto;
+    margin-left: 45px;
+    font-weight: bolder;
+    
+   
+  
+}
+
+.btn-login:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bottom a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
